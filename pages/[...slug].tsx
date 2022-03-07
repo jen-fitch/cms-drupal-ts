@@ -10,7 +10,7 @@ import {
 
 import { NodeArticle } from "@/components/node-article"
 import { NodeBasicPage } from "@/components/node-basic-page"
-// import { Layout } from "@/components/layout"
+import { Layout } from "@/components/layout"
 
 interface NodePageProps {
   node: DrupalNode
