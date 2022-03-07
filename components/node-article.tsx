@@ -38,11 +38,11 @@ export function NodeArticle({ node, ...props }) {
 export function NodeArticleTeaser({ node, ...props }) {
   return (
     <article {...props}>
-      <Link href={node.path.alias} passHref>
-        <a className="no-underline hover:text-blue-600">
+      {/*<Link href={node.path.alias} passHref>*/}
+      {/*  <a className="no-underline hover:text-blue-600">*/}
           <h2 className="mb-4 text-4xl font-bold">{node.title}</h2>
-        </a>
-      </Link>
+      {/*  </a>*/}
+      {/*</Link>*/}
       <NodeMeta node={node} />
       {node.field_image?.uri && (
         <div>
