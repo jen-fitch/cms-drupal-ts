@@ -3,7 +3,7 @@ import { GetStaticPropsResult } from "next"
 import { DrupalNode, getResourceCollectionFromContext } from "next-drupal"
 
 import { NodeArticleTeaser } from "@/components/node-article"
-import { Layout } from "@/components/layout"
+import { Layouts } from "@/components/layouts"
 
 interface IndexPageProps {
   nodes: DrupalNode[]
@@ -11,7 +11,7 @@ interface IndexPageProps {
 
 export default function IndexPage({ nodes }: IndexPageProps) {
   return (
-    <Layout>
+    <Layouts>
       <Head>
         <title>Next.js for Drupal</title>
         <meta
@@ -33,7 +33,7 @@ export default function IndexPage({ nodes }: IndexPageProps) {
           <p className="py-4">No nodes found</p>
         )}
       </div>
-    </Layout>
+    </Layouts>
   )
 }
 

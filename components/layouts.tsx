@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { PreviewAlert } from "@/components/preview-alert"
 
-export function Layout({ children }) {
+export function Layouts({ children }) {
   return (
     <>
       <PreviewAlert />
