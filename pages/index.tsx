@@ -1,7 +1,6 @@
 import Head from "next/head"
 import { GetStaticPropsResult } from "next"
 import { DrupalNode, getResourceCollectionFromContext } from "next-drupal"
-
 import { NodeArticleTeaser } from "@/components/node-article"
 import { Layouts } from "@/components/layouts"
 
@@ -19,12 +18,12 @@ export default function IndexPage({ nodes }: IndexPageProps) {
           content="A Next.js site powered by a Drupal backend."
         />
       </Head>
-      <div>
+      <div className={"flex"}>
         <h1 className="mb-10 text-6xl font-black">Latest Articles.</h1>
 
         {nodes?.length ? (
           nodes.map((node) => (
-            <div key={node.id}>
+            <div className={'flex-item'} key={node.id}>
               <NodeArticleTeaser node={node} />
               <hr className="my-20" />
             </div>
